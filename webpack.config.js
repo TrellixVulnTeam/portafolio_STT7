@@ -11,7 +11,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'main.html',
+            filename: 'index.html',
             template: './src/html/index.html',
             templateParameters: {
                 titulo: 'David Ceja Zapata'
