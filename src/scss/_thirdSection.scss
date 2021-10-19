@@ -1,0 +1,49 @@
+.about{
+    padding: 10px;
+    margin-bottom: 20px;
+    h2{
+        font-family: $fontTitle;
+        font-size: 3.5rem;
+        color: $contrastColor;
+        text-align: center;
+    }
+
+    hr{
+        width: 75%;
+        margin-left: 12.5%;
+        background-color: $contrastColor;
+        height: 2px;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    .about--presentation{
+        font-family: $fontText;
+        font-size: 2.5rem;
+        text-align: justify;
+        color: $fontColor;
+        font-weight: 300;
+
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .about--presentation--image{
+            width: 64px;
+            height: 64px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            background-image: url("../../images/about_me.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        p{
+            max-width: 500px;
+            span{
+                color: $contrastColor;
+            }
+        }
+    }
+}

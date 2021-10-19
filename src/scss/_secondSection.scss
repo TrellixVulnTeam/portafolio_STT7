@@ -1,0 +1,89 @@
+.projects{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    a{
+        text-decoration: none;
+    }
+
+   h2{
+       text-align: center;
+       font-family: $fontTitle;
+       color: $contrastColor;
+       font-size: 3.5rem;
+    }
+
+   hr{
+       width: 75%;
+       margin-left: 12.5%;
+       background-color: $contrastColor;
+       height: 2px;
+       border: none;
+       margin-bottom: 20px;
+   }
+
+   .projects__examples{
+       display: grid;
+       grid-auto-rows: 200px;
+       gap: 1rem;
+       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+       justify-items: center;
+       padding: 10px;
+   }
+   .project{
+       width: 100%;
+       background-color: $contrastColor;
+       border-radius: 10px;
+       cursor: pointer;
+   }
+
+   .project div{
+       width: 100%;
+       height: 60%;
+       border-radius: 10px 10px 0px 0px;
+       background-color: #262626ab;
+   }
+
+   .project p{
+       text-align: center;
+       font-family: $fontText;
+       color: $fontColor;
+       font-size: 1.8rem;
+       font-weight: 300;
+       margin-top: 10px;
+   }
+
+   .first-porject div{
+       background-image: url('../../images/batabit.png');
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+
+   .second-porject div{
+    background-image: url('../../images/today.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .third-project div{
+        background-image: url('../../images/blog.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .third-project{
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .third-project{
+        grid-column: inherit;
+    }
+}
